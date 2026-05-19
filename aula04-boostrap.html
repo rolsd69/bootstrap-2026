@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula04 - site basico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body class="bg-lights">
+   
+    <nav class="navbar navbar-expard-lg bg-dark navbar-dark shadow-sm">
+        <div class="Container">
+        <a href="" class="navbar-brand fw-bold">📦 Meu CRUD</a>
+        <button class="navbar-toggler" id="MenuPrincipal" type="button" data-bs-toggle="colLapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Config</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!--Conteudo Principal-->
+
+    <div class="container py-4">
+        <div class="d-flex justify-content-between aglin-items-center mb-3 flex-warp gap-2">
+            <h3 class="mb-0 "> Lista de produtos</h3>
+            <button class="ntn btn-primary" data-bs-target="modal"> Novo Produto</button>
+        </div>
+
+    <div class="table-responsive bg-white rounded shadow-sm.p-2 ">
+        <table class="table table-striped table-hover aglin-middle mb-0">
+            <thead class="text-dark">
+                <th>#</th>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th class="text-center"></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Notebook dell</td>
+                    <td>Eletronicos</td>
+                    <td>3.500,00</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger me-1" data-bs-toggle="modal" data-bs-target="#modalfrom">✏️ Editar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>   
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
