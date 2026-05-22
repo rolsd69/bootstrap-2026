@@ -1,0 +1,139 @@
+AULA 05 -
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula05 - Site com javascript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body{
+            background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-card{
+            background-color: white;
+            max-width: 420px;
+            width: 100%;
+            border:none;
+            border-radius: 1rem;
+        }
+        .form-control.isvalid, .form-control.is-invalid{
+            background-image: none;
+        }
+        .input-group-tex{
+            cursor: pointer;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+        <div class="card-login shadow-lg p-4 bg-white">
+            <div class="text-center mb-4">
+                <i class="bi bi-shield-lock-fill text-primary"></i>
+                    <h3 class="fw-bold mt-2">Acesso ao sistema </h3>
+                    <p class="text-muted">Digite suas credenciais para continuar</p>     
+            </div>
+            <form id="loginform" novalidate>
+                <!--Campo-Senha-->
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="seu@email">
+                    </div>
+                    <div class="invalid-feedback" id="emailError"></div>
+                    </div>
+
+                    <!--Campo-Senha-->
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Sua senha">
+                        <button class="btn btn-outline-secondary" id="togglePass" tabindex="-1">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback" id="passwordError"></div>
+
+                    <!--Lembrar / Esqueci a senha-->
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label for="remember" class="form-check-label">Lembrar-me</label>
+                        </div>
+                        <a href="" class="text-decoration-none small">Esqueceu a senha?</a>
+
+                    </div>
+                    <button class="btn btn-primary w-100 fw-semibold" id="submitBtn">
+                        <span class="d-flex align-items-center justify-content-center">
+                            <span class="spinner-border spinner-border-sm me-2 d-none" id="btnSpinner"></span   >
+                            Entrar
+                        </span>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+     const telaEnvio = document.getElementById('telaEnvio');
+     const telaChat = document.getElementById('telaChat');
+     const campoTexto = document.getElementById('campoTexto');
+     const btnEnviar = document.getElementById('btnEnviar');
+     const btnVoltar = document.getElementById('btnVoltar');
+     const listaMensagens = document.getElementById('listaMensagens');
+
+
+
+
+        btnEnviar.onclick = () => {
+            const texto = campoTexto.value.trim();
+
+            if(texto !=''){
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>
+
+AULA 02 - 
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="" class="navbar-brand">Menu responsivo bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuMobile">
+        <div class="navbar-nav msauto"></div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html
